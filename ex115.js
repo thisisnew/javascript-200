@@ -8,6 +8,7 @@ Date.daysDiff = (date1, date2) => {
 
     let diff = d2 - d1;
 
+    //연쇄적으로 diff를 계산
     const seconds = Math.floor((diff = diff / 1000) % 60);
     const minutes = Math.floor((diff = diff / 60) % 60);
     const hours = Math.floor((diff = diff / 60) % 24);
